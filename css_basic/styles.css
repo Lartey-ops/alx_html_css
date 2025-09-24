@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+article {
+flex: 2;
+overflow-y: auto;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+    text-align: right;
+}
+main {
+    display: flex;
+    flex-direction:row;
+    
+    flex:auto;
+}
+
+header, footer {
+    padding: 10px;
+    background-color: aquamarine;
+}
