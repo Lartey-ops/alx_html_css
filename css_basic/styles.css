@@ -5,6 +5,7 @@ body {
 article {
 flex: 2;
 overflow-y: auto;
+color: blue;
 }
 aside {
     flex: 1;
@@ -21,4 +22,15 @@ main {
 header, footer {
     padding: 10px;
     background-color: aquamarine;
+}
+
+h1 {
+   border-width: 2px;
+   border-style:dashed;
+   border-color: aquamarine;
+   padding: 2%;  
+}
+.logo {
+    font-size: 2cm;
+    color: aquamarine;
 }
