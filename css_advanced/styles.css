@@ -11,7 +11,7 @@ body {
   color: #000;
 }
 
-/* HEADER */
+
 header {
   background: url("Resources/background.png") no-repeat center/cover;
   min-height: 100vh;
@@ -23,7 +23,7 @@ header {
  
 }
 
-/* Header Top */
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@ header {
   text-decoration: none;
 }
 
-/* Hero Center */
+
 .hero {
   text-align: center;
   margin-top: auto;
@@ -61,7 +61,7 @@ header {
   margin-bottom: 30px;
 }
 
-/* Reusable Button */
+
 button.primary {
   background-color: #c271ff;
   color: white;
@@ -78,10 +78,10 @@ button.primary:hover {
   background-color: #a450d5;
 }
 
-/* PROS */
+
 .pros-section {
-  background: none; /* Remove extra background if you set one */
-  margin-top: -100px; /* Pull it up so it overlaps the hero background */
+  background: none; 
+  margin-top: -100px; 
   position: relative;
   z-index: 2;
 }
@@ -134,7 +134,7 @@ button.primary:hover {
   font-size: 16px;
 }
 
-/* QUOTE */
+
 .quote {
   background-color: #c271ff;
   display: flex;
@@ -156,7 +156,7 @@ button.primary:hover {
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: white; /* light yellow */
+  color: white; 
 }
 
 .quote-text strong {
@@ -169,7 +169,7 @@ button.primary:hover {
   font-size: 18px;
 }
 
-/* VIDEOS */
+
 .videos {
   padding: 80px 20px;
   text-align: center;
@@ -269,7 +269,7 @@ button.primary:hover {
   margin: 0;
 }
 
-/* MEMBERSHIP */
+
 .membership {
   padding: 80px 20px;
   text-align: center;
@@ -310,7 +310,7 @@ button.primary:hover {
   font-size: 16px;
 }
 
-/* FAQ */
+
 .faqs {
   background: #fff;
   padding: 80px 20px;
@@ -345,7 +345,7 @@ button.primary:hover {
   line-height: 1.5;
 }
 
-/* FOOTER */
+
 footer .outro {
   background: url("Resources/backgroundE.png");
   padding: 50px 20px;
