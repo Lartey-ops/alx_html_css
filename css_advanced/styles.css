@@ -1,0 +1,367 @@
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: #000;
+}
+
+/* HEADER */
+header {
+  background: url("Resources/background.png") no-repeat center/cover;
+  min-height: 100vh;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+ 
+}
+
+/* Header Top */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.header-top nav a {
+  margin-left: 40px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hero Center */
+.hero {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero h1 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Reusable Button */
+button.primary {
+  background-color: #c271ff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: #a450d5;
+}
+
+/* PROS */
+.pros-section {
+  background: none; /* Remove extra background if you set one */
+  margin-top: -100px; /* Pull it up so it overlaps the hero background */
+  position: relative;
+  z-index: 2;
+}
+
+.pros {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+ 
+}
+
+.pros h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.pros span {
+    font-style: italic;
+}
+
+.pros h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.pros-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pros-card {
+  max-width: 200px;
+}
+
+.pros-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.pros-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.pros-card p {
+  font-size: 16px;
+}
+
+/* QUOTE */
+.quote {
+  background-color: #c271ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 20px;
+  color: white;
+}
+
+.quote-img img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.quote-text blockquote {
+  max-width: 600px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: white; /* light yellow */
+}
+
+.quote-text strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.quote-text p span {
+  font-size: 18px;
+}
+
+/* VIDEOS */
+.videos {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.videos h2 {
+  font-size: 40px;
+  font-weight: 250;
+  margin-bottom: 50px;
+}
+
+.videos h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.video-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.video-card {
+    flex: 0 0 300px;
+  
+  background: white;
+
+  text-align: left;
+  padding-bottom: 15px;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img:first-child {
+  width: 100%;
+}
+
+.thumbnail img:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.video-card h3 {
+  font-size: 22px;
+  margin: 10px 15px 5px;
+}
+
+.video-card p {
+  font-size: 14px;
+  margin: 0 15px 10px;
+  color: #333;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 15px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 14px;
+  color: #c271ff;
+}
+
+.stars-duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 15px;
+}
+
+.stars img {
+  width: 20px;
+  margin-right: 2px;
+}
+
+.stars-duration p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* MEMBERSHIP */
+.membership {
+  padding: 80px 20px;
+  text-align: center;
+  background: url("Resources/backgroundFree.png");
+  color: white;
+}
+
+.membership h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.membership h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.memb-container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.memb img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.memb h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.memb p {
+  font-size: 16px;
+}
+
+/* FAQ */
+.faqs {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faqs h2 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.faq {
+  text-align: left;
+}
+
+.faq h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer .outro {
+  background: url("Resources/backgroundE.png");
+  padding: 50px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:  70px;
+  height: 200px;
+}
+
+footer .outro p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
