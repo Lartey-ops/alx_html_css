@@ -1,5 +1,5 @@
 
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -243,7 +243,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: #888; 
-
+}
 button {
   background-color: #ff5c5c;
   color: #fff;
@@ -385,18 +385,20 @@ footer {
 
 
 @media (max-width: 480px) {
-  nav ul {
+  .nav-links {
     display: none;
     flex-direction: column;
+    align-items: center;
     background-color: #000;
-    width: 100%;
     position: absolute;
     top: 60px;
-    left: 0;
-    text-align: center;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    gap: 15px;
   }
 
-  nav ul.active {
+  .nav-links.active {
     display: flex;
   }
 
