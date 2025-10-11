@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
+
 :root {
   --main-color: #FF6565;
   --text-color: #fff;
@@ -13,7 +13,7 @@
   --max-width: 1000px;
 }
 
-/* GLOBAL STYLES */
+
 body {
   font-family: var(--font-family);
   color: var(--text-color);
@@ -27,7 +27,7 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER */
+
 header {
   position: absolute;
   top: 0;
@@ -65,7 +65,7 @@ header {
   color: var(--main-color);
 }
 
-/* HERO SECTION */
+
 .hero {
   background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
   height: 100vh;
@@ -111,7 +111,7 @@ header {
   line-height: 1.6;
 }
 
-/* WHAT WE DO SECTION */
+
 .what-we-do {
   background: #fff;
   color: #333;
@@ -154,7 +154,7 @@ header {
   font-size: 0.95rem;
 }
 
-/* OUR RESULTS SECTION */
+
 .our-results {
   background: url("images/headphones_hero_2.jpg") center/cover no-repeat;
   color: #fff;
@@ -205,12 +205,12 @@ header {
   z-index: 1;
 }
 
-/* CONTACT SECTION */
+
 .contact {
   text-align: center;
   padding: 80px 20px;
   background-color: #fff;
-  color: #000; /* Reset text color */
+  color: #000; 
 }
 
 .contact h2 {
@@ -224,8 +224,7 @@ form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #fff; /* Ensures white background */
-}
+  background-color: #fff; 
 
 input,
 textarea {
@@ -236,13 +235,13 @@ textarea {
   font-size: 14px;
   outline: none;
   width: 100%;
-  background-color: #fff; /* Prevents black background */
-  color: #000; /* Makes text visible */
+  background-color: #fff; 
+  color: #000; 
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #888; /* Gray placeholder like your screenshot */
+  color: #888; 
 }
 
 button {
@@ -262,7 +261,7 @@ button:hover {
   background-color: #ff7676;
 }
 
-/* FOOTER */
+
 footer {
   background-color: #071629;
   color: #fff;
@@ -291,7 +290,7 @@ footer {
 .social-icons a img {
   width: 25px;
   height: 25px;
-  filter: brightness(0) invert(1); /* makes icons white */
+  filter: brightness(0) invert(1); 
   transition: opacity 0.3s;
 }
 
@@ -305,9 +304,7 @@ footer {
   margin-top: 20px;
 }
 
-/* ANIMATIONS */
 
-/* Fade-up animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -319,7 +316,7 @@ footer {
   }
 }
 
-/* Bounce animation for hover */
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -329,13 +326,13 @@ footer {
   }
 }
 
-/* Apply animations */
+
 .feature, .result {
   opacity: 0;
   animation: fadeUp 1s ease forwards;
 }
 
-/* Stagger the timing for a smooth appearance */
+
 .feature:nth-child(1) { animation-delay: 0.2s; }
 .feature:nth-child(2) { animation-delay: 0.4s; }
 .feature:nth-child(3) { animation-delay: 0.6s; }
@@ -346,7 +343,7 @@ footer {
 .result:nth-child(3) { animation-delay: 0.7s; }
 .result:nth-child(4) { animation-delay: 0.9s; }
 
-/* Hover effects */
+
 .feature:hover, .result:hover {
   animation: bounce 0.6s ease;
   cursor: pointer;
@@ -354,7 +351,7 @@ footer {
 
 
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .features,
   .results-grid {

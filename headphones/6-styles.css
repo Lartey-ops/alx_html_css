@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
+
 :root {
   --main-color: #FF6565;
   --text-color: #fff;
@@ -13,7 +13,7 @@
   --max-width: 1000px;
 }
 
-/* GLOBAL */
+
 body {
   font-family: var(--font-family);
   color: var(--text-color);
@@ -27,7 +27,7 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER */
+
 header {
   position: absolute;
   top: 0;
@@ -65,7 +65,7 @@ header {
   color: var(--main-color);
 }
 
-/* HERO SECTION */
+
 .hero {
   background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
   height: 100vh;
@@ -111,7 +111,7 @@ header {
   line-height: 1.6;
 }
 
-/* WHAT WE DO */
+
 .what-we-do {
   background: #fff;
   color: #333;
@@ -154,7 +154,7 @@ header {
   font-size: 0.95rem;
 }
 
-/* OUR RESULTS (PURE CSS PENTAGON) */
+
 .our-results {
   background: url("images/headphones_hero_2.jpg") center/cover no-repeat;
   color: #fff;
@@ -187,7 +187,7 @@ header {
   max-width: 200px;
 }
 
-/* Pure CSS pentagon shape */
+
 .pentagon {
   width: 120px;
   height: 120px;
@@ -206,7 +206,7 @@ header {
   font-weight: bold;
 }
 
-/* CONTACT SECTION */
+
 .contact {
   text-align: center;
   padding: 80px 20px;
@@ -262,7 +262,7 @@ button:hover {
   background-color: #ff7676;
 }
 
-/* FOOTER */
+
 footer {
   background-color: #071629;
   color: #fff;
@@ -305,7 +305,7 @@ footer {
   margin-top: 20px;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .features,
   .results-grid {
