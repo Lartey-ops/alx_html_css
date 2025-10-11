@@ -225,6 +225,7 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff; 
+}
 
 input,
 textarea {
